@@ -61,3 +61,4 @@ print_smt("array: ");
 foreach ($array as $value) {
     print_smt($value);
 }
+
