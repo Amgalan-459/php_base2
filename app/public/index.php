@@ -1,64 +1,116 @@
 <?php
 
-print_smt("first task: ");
-function print_smt($a) {
-    echo $a ;
-    echo PHP_EOL;
-}
+// $array = [
+//     'Russia' => ['capital' => 'Moscow', 'citizen'=> 140000],
+//     'China' => ['capital' => 'Beijin', 'citizen'=> 1400000],
+//     'Belorussia' => ['capital' => 'Minsk', 'citizen'=> 10000],
+// ];
 
-$var = 100;
-print_smt($var);
+// foreach ( $array as $key => list('capital' => $capital, 'citizen' => $citizen)) {
+//     var_dump($key);
+//     var_dump( $capital );
+//     var_dump( $citizen );
+// }
 
-$var = sqrt($var);
-print_smt($var);
+// $var = 'val1';
 
-$var = (int)$var;
-print_smt(gettype($var));
+// $return = '';
 
-print_smt(var_dump($var));
+// switch ($var) {
+//     case "val1":
+//         $return = "foo_for_var1";
+//         break;
+//     case "val2":
+//         $return = "foo_for_var2";
+//         break;
+//     case "val3":
+//         $return = "foo_for_var3";
+//         break;
+//     default:
+//     $return = 'defualt';
+//         break;
+// }
+
+// print_r($return);
+
+// $return = match($var) {
+//     "val1" => "foo_for_var1",
+//     "val2" => "foo_for_var2",
+//     "val3" => "foo_for_var3",
+//     "val4" => "foo_for_var4",
+//     default => "default",
+// };
+
+// print_r($return);
+
+// $micro =  microtime(true);
 
 
-print_smt("second task: ");
+// for ( $i = 0; $i < 5000000; $i++ ) {
+//     $var = 'val1';
 
-$x = 10;
-$y = 15;
-$z = 2;
+//     $return = '';
 
-print_smt(sqrt($x ** 2 + $y ** 2 + $z ** 2));
+//     switch ($var) {
+//         case "val1":
+//             $return = "foo_for_var1";
+//             break;
+//         case "val2":
+//             $return = "foo_for_var2";
+//             break;
+//         case "val3":
+//             $return = "foo_for_var3";
+//             break;
+//         default:
+//         $return = 'defualt';
+//             break;
+//     }
+// }
 
-
-print_smt('third task: ');
-$strPoly = "abba";
-
-$flag = true;
-for( $i = 0; $i < strlen($strPoly) / 2; $i++ ) {
-    if ( $strPoly[$i] != $strPoly[$i - 1]) {
-        $flag = false;
-        break;
-    }
-}
-
-if ($flag)
-    print_smt("$strPoly is polyndrom");
-else
-print_smt("$strPoly is not polyndrom");
+// echo PHP_EOL;
+// echo microtime(true) - $micro;
 
 
-print_smt("fourth task: ");
-$array = [];
+// $micro =  microtime(true);
 
-function multFunc($num) : array {
-    $arr = [];
-    for ($i = 1; $i <= 10; $i++) {
-        array_push($arr, $num * $i);
-    }
-    return $arr;
-}
+// for( $i = 0; $i < 5000000; $i++ ) {
+//     $var = 'val1';
 
-$array =  multFunc(4);
+//     $return = '';
 
-print_smt("array: ");
-foreach ($array as $value) {
-    print_smt($value);
-}
+//     $return = match($var) {
+//         "val1" => "foo_for_var1",
+//         "val2" => "foo_for_var2",
+//         "val3" => "foo_for_var3",
+//         "val4" => "foo_for_var4",
+//         default => "default",
+//     };
+// }
 
+// echo PHP_EOL;
+// echo microtime(true) - $micro;
+
+
+include('../src/Main.php');
+
+// $main = new Main();
+
+// var_dump($main->var);
+// var_dump($main::$ps);
+// $main->func();
+
+
+// $int = 5;
+
+// Main::statFunc($int);
+
+// echo $int;
+
+// echo "<html> $int </html>";
+
+
+//echo "h1";
+
+print_r($_GET);
+
+print_r(1);
